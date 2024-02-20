@@ -1,14 +1,28 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import SearchBar from '../components/SearchBar';
+import { GlobalStates } from '../data';
+import { useState } from 'react';
 
 const Root = () => {
+  const [search, setSearch] = useState('');
   return (
-    <div className="bg-[#10141E] h-screen w-screen flex flex-col items-center">
-      <Navbar />
-      <div>
-        <Outlet />
+    <GlobalStates.Provider
+      value={{
+        search: search,
+        setSearch: setSearch,
+      }}
+    >
+      <div className="bg-[#10141E] flex flex-col items-center xl:flex-row xl:items-start">
+        <Navbar />
+        <div className="flex flex-col items-center w-full h-full">
+          <SearchBar />
+          <div className="">
+            <Outlet />
+          </div>
+        </div>
       </div>
-    </div>
+    </GlobalStates.Provider>
   );
 };
 
