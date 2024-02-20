@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [selectedDiv, setSelected] = useState(null);
+  const [selectedDiv, setSelected] = useState<number | null>(null);
 
-  const setIndex = (index) => {
+  const setIndex = (index: number) => {
     setSelected(index);
   };
 
