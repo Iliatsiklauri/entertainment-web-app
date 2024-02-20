@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="h-14 w-full bg-[#161D2F] flex items-center justify-between p-4 md:w-[95%] md:rounded-xl md:mt-4">
-      <img src="public\logo.svg" alt="" />
+      <img src="logo.svg" alt="" />
       <div className="flex gap-4 md:gap-8">
         <Link to="/">
           <svg
@@ -68,7 +68,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <img src="public\image-avatar.png" alt="" className="h-6 w-6 flex-shrink-0" />
+      <img src="image-avatar.png" alt="" className="h-6 w-6 flex-shrink-0" />
     </nav>
   );
 };
