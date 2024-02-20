@@ -3,7 +3,6 @@ import {
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
-  json,
 } from 'react-router-dom';
 import './App.css';
 import Root from './pages/Root';
