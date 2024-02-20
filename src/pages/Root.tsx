@@ -15,7 +15,7 @@ const Root = () => {
     >
       <div className="bg-[#10141E] flex flex-col items-center xl:flex-row xl:items-start">
         <Navbar />
-        <div className="flex flex-col items-center w-full h-full">
+        <div className="flex flex-col h-full w-full">
           <SearchBar />
           <div className="">
             <Outlet />

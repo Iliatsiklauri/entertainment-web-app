@@ -3,6 +3,7 @@ import {
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
+  json,
 } from 'react-router-dom';
 import './App.css';
 import Root from './pages/Root';
@@ -15,9 +16,27 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
-        <Route index element={<Home />} />
-        <Route path="Movies" element={<Movies />} />
-        <Route path="TVshows" element={<TVshows />} />
+        <Route
+          index
+          element={<Home />}
+          loader={async () => {
+            return fetch('src/data.json');
+          }}
+        />
+        <Route
+          path="Movies"
+          element={<Movies />}
+          loader={async () => {
+            return fetch('src/data.json');
+          }}
+        />
+        <Route
+          path="TVshows"
+          element={<TVshows />}
+          loader={async () => {
+            return fetch('src/data.json');
+          }}
+        />
         <Route path="Bookmarked" element={<Bookmarked />} />
       </Route>
     )
