@@ -19,21 +19,27 @@ function App() {
           index
           element={<Home />}
           loader={async () => {
-            return fetch('src/data.json');
+            const response = await fetch('src/data.json');
+            const data = await response.json();
+            return data;
           }}
         />
         <Route
           path="Movies"
           element={<Movies />}
           loader={async () => {
-            return fetch('src/data.json');
+            const response = await fetch('src/data.json');
+            const data = await response.json();
+            return data;
           }}
         />
         <Route
           path="TVshows"
           element={<TVshows />}
           loader={async () => {
-            return fetch('src/data.json');
+            const response = await fetch('src/data.json');
+            const data = await response.json();
+            return data;
           }}
         />
         <Route path="Bookmarked" element={<Bookmarked />} />
