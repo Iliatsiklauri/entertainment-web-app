@@ -4,6 +4,7 @@ import { propsType } from '../data';
 const Movies = () => {
   const data = useLoaderData() as propsType[];
   const movies = data.filter((el) => el.category === 'Movie');
+  console.log(movies);
 
   return (
     <div className="w-full flex flex-wrap gap-[15px]">
