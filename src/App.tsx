@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import TVshows from './pages/TVshows';
 import Bookmarked from './pages/Bookmarked';
+import jsonData from './data.json'; // Import JSON data
 
 function App() {
   const router = createBrowserRouter(
@@ -19,21 +20,21 @@ function App() {
           index
           element={<Home />}
           loader={async () => {
-            return fetch('src/data.json');
+            return jsonData;
           }}
         />
         <Route
           path="Movies"
           element={<Movies />}
           loader={async () => {
-            return fetch('src/data.json');
+            return jsonData;
           }}
         />
         <Route
           path="TVshows"
           element={<TVshows />}
           loader={async () => {
-            return fetch('src/data.json');
+            return jsonData;
           }}
         />
         <Route path="Bookmarked" element={<Bookmarked />} />
