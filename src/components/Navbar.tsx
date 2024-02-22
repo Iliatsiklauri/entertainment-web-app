@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-14 w-full bg-[#161D2F] flex items-center justify-between p-4 md:w-[95%] md:rounded-xl md:mt-4  xl:h-[960px] xl:w-[96px] xl:flex-col  xl:rounded-3xl xl:ml-6">
+    <nav className="h-14 w-full bg-[#161D2F] flex items-center justify-between p-4 md:w-[95%] md:rounded-xl md:mt-4  xl:h-[960px] xl:w-[96px] xl:flex-col  xl:rounded-3xl xl:ml-6 flex-shrink-0">
       <img src="logo.svg" alt="" />
       <div className="flex gap-4 md:gap-8 xl:flex-col xl:mb-[440px]">
         <Link to="/">

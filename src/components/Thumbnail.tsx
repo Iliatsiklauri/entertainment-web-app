@@ -36,9 +36,7 @@ const Thumbnail = ({
         <div className="flex justify-between items-center gap-1">
           <img
             src={`${
-              category === 'Movie'
-                ? '/public/icon-category-movie.svg'
-                : '/public/icon-category-tv.svg'
+              category === 'Movie' ? 'icon-category-movie.svg' : 'icon-category-tv.svg'
             } `}
             alt=""
             className="flex-shrink-0"

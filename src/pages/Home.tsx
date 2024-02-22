@@ -36,10 +36,18 @@ const Home = () => {
       )}
       {search ? null : (
         <div>
-          <div className="w-[1200px] h-[240px]">
+          <div className="ml-[820px] md:ml-[470px] xl:ml-0 w-[1200px] h-[240px]">
             <Slider />
           </div>
         </div>
+      )}
+      {search ? null : (
+        <h1
+          className="text-white font-Outfit text-4xl font-normal tracking-normal leading-normal ml-3 mb-4 hidden xl:block
+"
+        >
+          Recomended for you
+        </h1>
       )}
       <div className={`ilia gap-[15px] justify-center`}>
         {newData.map((el: propsType, index: number) => (
