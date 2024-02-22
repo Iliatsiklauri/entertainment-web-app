@@ -1,3 +1,35 @@
 .selected path {
   fill: #ffffff;
 }
+.after {
+  height: 3px;
+  width: 3px;
+  background: white;
+  border-radius: 10px;
+  opacity: 0.75;
+}
+
+@media screen and (width < 768px) {
+  .ilia {
+    display: grid;
+    grid-template-columns: repeat(2, 164px);
+    min-height: 100vh;
+    width: 100%;
+  }
+}
+@media screen and (width > 768px) {
+  .ilia {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    min-height: 100vh;
+    width: 100%;
+  }
+}
+@media screen and (width > 1280px) {
+  .ilia {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    min-height: 100vh;
+    width: 100%;
+  }
+}

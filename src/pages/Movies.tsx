@@ -1,24 +1,41 @@
 import { useLoaderData } from 'react-router-dom';
-import { propsType } from '../data';
+import { GlobalStates, propsType } from '../data';
+import { useContext, useState } from 'react';
+import Thumbnail from '../components/Thumbnail';
 
 const Movies = () => {
   const data = useLoaderData() as propsType[];
   const movies = data.filter((el) => el.category === 'Movie');
+  const context = useContext(GlobalStates);
+  const [thumbnails, setThumbnails] = useState(movies);
+  const handleBookmarkClick = (index: number) => {
+    const updatedThumbnails = [...thumbnails];
+    updatedThumbnails[index].isBookmarked = !updatedThumbnails[index].isBookmarked;
+    setThumbnails(updatedThumbnails);
+  };
+  if (!context) {
+    return <h1>Error</h1>;
+  }
+  const { search } = context;
+  const lastData = search
+    ? movies.filter((el) =>
+        el.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+      )
+    : movies;
 
   return (
-    <div className="w-full flex flex-wrap gap-[15px]">
-      {movies.map((el: propsType, index: number) => (
-        <div key={index}>
-          <img
-            src={`${el?.thumbnail?.regular?.small}`}
-            alt=""
-            className="w-[164px] h-[110px] rounded-lg"
-          />
-          <p className="text-white font-normall text-14 text-sm leading-normal w-[164px]">
-            {el?.title}
-          </p>
-          <p className="text-white">{el?.category}</p>
-        </div>
+    <div className="gap-[15px] justify-center min-h-screen ilia">
+      {lastData.map((el: propsType, index: number) => (
+        <Thumbnail
+          category={el.category}
+          key={index}
+          src={el?.thumbnail?.regular?.large}
+          title={el.title}
+          year={el.year}
+          rating={el.rating}
+          isBookmarked={el.isBookmarked}
+          onBookmarkClick={() => handleBookmarkClick(index)}
+        />
       ))}
     </div>
   );

@@ -37,7 +37,13 @@ function App() {
             return jsonData;
           }}
         />
-        <Route path="Bookmarked" element={<Bookmarked />} />
+        <Route
+          path="Bookmarked"
+          element={<Bookmarked />}
+          loader={async () => {
+            return jsonData;
+          }}
+        />
       </Route>
     )
   );

@@ -1,8 +1,17 @@
-import { createContext } from 'react';
+import { createContext, useState } from 'react';
 
 type globalType = {
   search: string;
   setSearch: React.Dispatch<React.SetStateAction<string>>;
+};
+export type thumbType = {
+  rating: string;
+  year: number;
+  src: string;
+  title: string;
+  category: string;
+  isBookmarked: boolean;
+  onBookmarkClick: () => void;
 };
 export type propsType = {
   category: string;
