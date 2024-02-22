@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { GlobalStates } from '../data';
 
 const SearchBar = () => {
@@ -7,6 +7,7 @@ const SearchBar = () => {
     return <h1>error</h1>;
   }
   const { setSearch } = context;
+
   return (
     <div className="flex  mt-[26px] gap-4 ml-3 md:ml-[2.5%] md:gap-6 xl:mt-8 self-start w-[90%] md:w-[70%]">
       <img src="icon-search.svg" alt="" className="md:w-8 md:h-8" />

@@ -13,11 +13,20 @@ const Root = () => {
         setSearch: setSearch,
       }}
     >
-      <div className="bg-[#10141E] flex flex-col items-center xl:flex-row xl:items-start">
+      <div className="bg-[#10141E] flex flex-col items-center xl:flex-row xl:items-start overflow-hidden">
         <Navbar />
-        <div className="flex flex-col h-full w-full">
+        <div className="flex flex-col h-full w-full items-center gap-4">
           <SearchBar />
-          <div className="">
+          {search ? (
+            <p
+              className="text-white text-base font-normal tracking-tight leading-normal
+"
+            >
+              Search results for '{search}'
+            </p>
+          ) : null}
+
+          <div className="xl:mr-32">
             <Outlet />
           </div>
         </div>
