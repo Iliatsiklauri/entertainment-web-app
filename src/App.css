@@ -1,6 +1,7 @@
 .selected path {
   fill: #ffffff;
 }
+
 .after {
   height: 3px;
   width: 3px;
@@ -13,6 +14,7 @@
   .ilia {
     display: grid;
     grid-template-columns: repeat(2, 164px);
+    grid-template-rows: repeat(10, 170px);
     min-height: 100vh;
     width: 100%;
   }
@@ -21,6 +23,7 @@
   .ilia {
     display: grid;
     grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(1, 230px);
     min-height: 100vh;
     width: 100%;
   }
@@ -29,6 +32,7 @@
   .ilia {
     display: grid;
     grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(1, 260px);
     min-height: 100vh;
     width: 100%;
   }

@@ -24,19 +24,24 @@ const Movies = () => {
     : movies;
 
   return (
-    <div className="gap-[15px] justify-center min-h-screen ilia">
-      {lastData.map((el: propsType, index: number) => (
-        <Thumbnail
-          category={el.category}
-          key={index}
-          src={el?.thumbnail?.regular?.large}
-          title={el.title}
-          year={el.year}
-          rating={el.rating}
-          isBookmarked={el.isBookmarked}
-          onBookmarkClick={() => handleBookmarkClick(index)}
-        />
-      ))}
+    <div className="">
+      <h1 className="text-white font-outfit text-3xl md:text-4xl mb-4 text-20 font-normal leading-normal tracking-normal">
+        Movies
+      </h1>
+      <div className="gap-[15px] justify-center min-h-screen ilia">
+        {lastData.map((el: propsType, index: number) => (
+          <Thumbnail
+            category={el.category}
+            key={index}
+            src={el?.thumbnail?.regular?.large}
+            title={el.title}
+            year={el.year}
+            rating={el.rating}
+            isBookmarked={el.isBookmarked}
+            onBookmarkClick={() => handleBookmarkClick(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
