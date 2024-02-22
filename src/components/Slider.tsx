@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/autoplay';
 
-const YourComponent = () => {
+const Slider = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -70,13 +70,6 @@ const YourComponent = () => {
         <div>
           <div className="relative">
             <div className="absolute bottom-2 left-3">
-              <div className="flex">
-                <p>tv</p>
-                <div className="after"></div>
-                <p>2022</p>
-                <div className="after"></div>
-                <p>3123</p>
-              </div>
               <p className="text-white font-outfit text-24 font-normal ">
                 Sark Side Of The Moon
               </p>
@@ -93,4 +86,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default Slider;
