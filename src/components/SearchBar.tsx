@@ -14,7 +14,7 @@ const SearchBar = () => {
       <input
         type="text"
         placeholder="Search for movies or TV series"
-        className="bg-transparent placeholder:opacity-50 focus:outline-none w-[80%] placeholder:md:text-2xl  text-white font-normal md:text-2xl
+        className="bg-transparent placeholder:opacity-50 focus:outline-none w-[80%] placeholder:md:text-2xl  text-white font-normal md:text-2xl search
         "
         onChange={(e) => setSearch(e.target.value)}
       />

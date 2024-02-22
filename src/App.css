@@ -1,6 +1,17 @@
 .selected path {
   fill: #ffffff;
 }
+.mainimage {
+  display: none;
+  z-index: 3;
+}
+
+.relative.hover-effect:hover .mainimage {
+  display: block;
+}
+.relative.hover-effect {
+  z-index: 1;
+}
 
 .after {
   height: 3px;
@@ -8,6 +19,9 @@
   background: white;
   border-radius: 10px;
   opacity: 0.75;
+}
+.search {
+  caret-color: red;
 }
 
 @media screen and (width < 768px) {

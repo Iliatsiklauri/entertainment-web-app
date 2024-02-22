@@ -19,8 +19,9 @@ const Slider = () => {
       className="ml-6"
     >
       <SwiperSlide>
-        <div className="relative">
-          <div className="absolute bottom-2 left-3">
+        <div className="relative hover-effect hover:bg-gray-500 hover:rounded-lg hover:opacity-60 cursor-pointer flex items-center justify-center">
+          <img src="Group 3.png" alt="" className="hidden absolute mainimage" />
+          <div className="imp absolute bottom-2 left-3">
             <div className="text-xs md:text-sm flex items-center justify-between text-white opacity-75 w-[90%]">
               <p>2018</p>
               <div className="after"></div>
@@ -41,8 +42,9 @@ const Slider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="relative">
-          <div className="absolute bottom-2 left-3 w-[150px] md:w-[200px]">
+        <div className="relative hover-effect hover:bg-gray-500 hover:rounded-lg hover:opacity-60 cursor-pointer flex items-center justify-center">
+          <img src="Group 3.png" alt="" className="hidden absolute mainimage" />
+          <div className="imp absolute bottom-2 left-3 w-[150px] md:w-[200px]">
             <div className="text-xs md:text-sm flex items-center justify-between text-white opacity-75 w-[90%]">
               <p>2021</p>
               <div className="after"></div>
@@ -63,8 +65,9 @@ const Slider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="relative">
-          <div className="absolute bottom-2 left-3">
+        <div className="relative hover-effect hover:bg-gray-500 hover:rounded-lg hover:opacity-60 cursor-pointer flex items-center justify-center">
+          <img src="Group 3.png" alt="" className="hidden absolute mainimage" />
+          <div className="imp absolute bottom-2 left-3">
             <div className="text-xs md:text-sm flex items-center justify-between text-white opacity-75 w-[90%]">
               <p>2019</p>
               <div className="after"></div>
@@ -85,8 +88,9 @@ const Slider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="relative">
-          <div className="absolute bottom-2 left-3 w-[150px] md:w-[200px]">
+        <div className="relative hover-effect hover:bg-gray-500 hover:rounded-lg hover:opacity-60 cursor-pointer flex items items-center justify-center">
+          <img src="Group 3.png" alt="" className="hidden mainimage absolute" />
+          <div className="imp absolute bottom-2 left-3 w-[150px] md:w-[200px]">
             <div className="text-xs md:text-sm flex items-center justify-between text-white opacity-75 w-[90%]">
               <p>2021</p>
               <div className="after"></div>
@@ -106,8 +110,9 @@ const Slider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div>
-          <div className="relative">
-            <div className="absolute bottom-2 left-3 w-[150px] md:w-[200px]">
+          <div className="relative hover-effect hover:bg-gray-500 hover:rounded-lg hover:opacity-60 cursor-pointer flex items-center justify-center">
+            <img src="Group 3.png" alt="" className="hidden absolute mainimage" />
+            <div className="imp absolute bottom-2 left-3 w-[150px] md:w-[200px]">
               <div className="text-xs md:text-sm flex items-center justify-between text-white opacity-75 w-[90%]">
                 <p>2019</p>
                 <div className="after"></div>
