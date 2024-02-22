@@ -19,7 +19,7 @@ const Root = () => {
           <SearchBar />
           {search ? (
             <p
-              className="text-white text-base font-normal tracking-tight leading-normal
+              className="text-white  self-start ml-8  xl:ml-10 md:text-xl text-base font-normal tracking-tight leading-normal
 "
             >
               Search results for '{search}'

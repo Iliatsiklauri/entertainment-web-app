@@ -28,7 +28,7 @@ const Home = () => {
     <div className="min-h-screen relative">
       {search ? null : (
         <h1
-          className="text-white font-Outfit text-2xl font-normal tracking-normal leading-normal ml-[375px] md:text-3xl xl:text-4xl md:ml-[475px] xl:ml-3 xl:mb-4 xl:block
+          className="text-white font-Outfit text-2xl font-normal tracking-normal leading-normal ml-[375px] md:text-3xl xl:text-4xl md:ml-[475px] xl:ml-3 xl:mb-4 xl:block mb-4
 "
         >
           Trending
@@ -36,14 +36,14 @@ const Home = () => {
       )}
       {search ? null : (
         <div>
-          <div className="ml-[350px] w-[750px] md:ml-[455px] xl:ml-0 md:w-[1200px] h-[190px] md:h-[240px]">
+          <div className="ml-[350px] w-[750px] md:ml-[455px] xl:ml-0 md:w-[1200px] h-[130px] md:h-[240px]">
             <Slider />
           </div>
         </div>
       )}
       {search ? null : (
         <h1
-          className="text-white font-outfit text-20 font-normal leading-normal tracking-tighter text-2xl md:text-3xl ml-[375px] xl:text-4xl md:ml-[475px] xl:ml-3 xl:mb-4 xl:block
+          className="text-white font-outfit text-20 font-normal leading-normal tracking-tighter text-2xl mb-4 md:text-3xl  xl:text-4xl md:ml-[475px] xl:ml-3  xl:block
 "
         >
           Recomended for you

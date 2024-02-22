@@ -25,9 +25,14 @@ const Movies = () => {
 
   return (
     <div className="">
-      <h1 className="text-white font-outfit text-3xl md:text-4xl mb-4 text-20 font-normal leading-normal tracking-normal">
-        Movies
-      </h1>
+      {search ? null : (
+        <h1
+          className="text-white font-outfit text-20 font-normal leading-normal tracking-tighter text-2xl mb-4 md:text-3xl  xl:text-4xl  xl:block
+"
+        >
+          Movies
+        </h1>
+      )}
       <div className="gap-[15px] justify-center min-h-screen ilia">
         {lastData.map((el: propsType, index: number) => (
           <Thumbnail

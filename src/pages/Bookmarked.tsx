@@ -30,9 +30,11 @@ const Bookmarked = () => {
 
   return (
     <div>
-      <h1 className="text-white font-outfit text-3xl md:text-4xl mb-4 text-20 font-normal leading-normal tracking-normal">
-        Bookmarked Movies
-      </h1>
+      {search ? null : (
+        <h1 className="text-white font-outfit text-2xl md:text-4xl mb-4 text-20 font-normal leading-normal tracking-normal xl:text-3xl">
+          Bookmarked Movies
+        </h1>
+      )}
       <div className="gap-[15px] justify-center min-h-screen ilia">
         {filteredThumbnails.map((el: propsType, index: number) => (
           <Thumbnail
